@@ -32,6 +32,13 @@ print(word_to_number("sechshunderteinundzwanzig"))
 621
 ```
 
+Larger numbers are also supported.
+
+```
+print(word_to_number("zweiunddreißigtausendfünfhundertachtundvierzig"))
+32548
+```
+
 None is returned in case the word is not a number.
 
 ```
@@ -45,3 +52,4 @@ The function should also be robust to words including numbers in them (e.g.; Vie
 print(word_to_number("tausendsassa"))
 None
 ```
+
