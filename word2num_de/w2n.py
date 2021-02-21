@@ -51,17 +51,17 @@ def sum_numbers(tokens):
 
 def word_to_number(word):
     """ Returns the digit as a string given a written out number in German. """
-    word = word.lower().strip()
+    word_l = word.lower().strip()
     
     if word in num_dict:
-        return num_dict[word]
+        return num_dict[word_l]
     
     for digit, multiplicand in [["tausend", 1000], ["hundert", 100]]:
-        if digit in word:
-            return trans_with_multiplicand(word, word.index(digit), multiplicand)
+        if digit in word_l:
+            return trans_with_multiplicand(word_l, word_l.index(digit), multiplicand)
     
-    if ("zehn" in word) & (word.endswith("zehn")):
-        return str(10 + int(num_dict[word[0:word.index("zehn")]]))
+    if ("zehn" in word_l) & (word_l.endswith("zehn")):
+        return str(10 + int(num_dict[word_l[0:word_l.index("zehn")]]))
     
     tokens = word.split("und")
     if len(tokens) <= 1:

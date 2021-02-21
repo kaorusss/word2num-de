@@ -70,7 +70,7 @@ class TestWord2Num(unittest.TestCase):
         self.assertEqual(word_to_number("hunderteins"), "101")
         self.assertEqual(word_to_number("tausendundzwei"), "1002")
         self.assertEqual(word_to_number("eintausendzwanzig"), "1020")
-        self.assertEqual(word_to_number("bäckerei"), "bäckerei")
+        self.assertEqual(word_to_number("Bäckerei"), "Bäckerei")
 
         
 if __name__ == '__main__':
