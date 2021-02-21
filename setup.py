@@ -1,19 +1,12 @@
 import os
+from setuptools import setup
 
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
-    
-
-def open_file(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname))    
 
 setup(
     name = 'word2num_de',
     packages = ['word2num_de'],
     version = '0.1',
-    license=open('LICENSE.txt').read(),
+    license=open('LICENSE').read(),
     description = 'Transforms written numbers in German to numbers.',
     author = 'Kaoru S.',
     author_email = '',
