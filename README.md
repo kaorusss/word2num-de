@@ -31,8 +31,3 @@ The function returns the written-out number in digits (as a string).
 print(word_to_number("sechshunderteinundzwanzig"))
 '621'
 ```
-
-```
-print(word_to_number("sechshunderteinundzwanzig"))
-'621'
-```
