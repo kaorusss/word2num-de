@@ -1,5 +1,8 @@
 # word2num-de
-EN
+
+Python package for German word to number tranformation.
+
+EN:
 - Transforms written numbers in German to numbers.
 - Works for numbers 0-999999
 
