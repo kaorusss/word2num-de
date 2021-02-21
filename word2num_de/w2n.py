@@ -19,7 +19,7 @@ num_dict = {
   "siebzehn": "17",
   "zwanzig": "20",
   "dreißig": "30",
-  "dreissig": "30", # CH
+  "dreissig": "30", # More common in Switzerland
   "vierzig": "40",
   "fünfzig": "50",
   "sechzig": "60",
@@ -39,7 +39,6 @@ def trans_with_multiplicand(string, index, multiplicand):
         pass
     elif len(string[0:index]) > 1:
         multiplier = word_to_number(string[0:index])
-        multiplier = multiplier if multiplier else 1
         multiplier = 1 if multiplier=="ein" else int(multiplier)
     
     rest = word_to_number(string[index+7:]) or 0    
