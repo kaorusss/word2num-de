@@ -52,7 +52,7 @@ def sum_numbers(tokens):
 
 
 def word_to_number(word):
-    """ Returns the digit as a string given a written out number in German. """
+    """ Returns the digit given a written out number in German. """
 
     word = word.lower().strip()
     
